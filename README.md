@@ -6,4 +6,4 @@ Control plane (tenants, auth, registry) → runtime workers → gateways → mem
 ## Quickstart
 uv sync
 docker compose -f infra/docker-compose.yml up -d
-uv run uvicorn main:app --reload --app-dir apps/api
+uv run uvicorn agent_platform.apps.api.main:app --reload
